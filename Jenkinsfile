@@ -1,6 +1,6 @@
 pipeline {
     agent any
- 
+
     stages {
         /*
 
@@ -57,11 +57,11 @@ pipeline {
                 '''
             }
         }
-    } 
+    }
 
     post {
         always {
             junit 'jest-results/junit.xml'
         }
-    } 
+    }
 }
